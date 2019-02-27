@@ -3,6 +3,7 @@ using JetBrains.Annotations;
 using Lykke.HttpClientGenerator;
 using Lykke.HttpClientGenerator.Infrastructure;
 using System;
+using Lykke.Service.MarketInstruments.Client.Services;
 
 namespace Lykke.Service.MarketInstruments.Client
 {
@@ -40,6 +41,10 @@ namespace Lykke.Service.MarketInstruments.Client
 
             builder.RegisterInstance(new MarketInstrumentsClient(clientBuilder.Create()))
                 .As<IMarketInstrumentsClient>()
+                .SingleInstance();
+            
+            builder.RegisterType<MarketInstrumentService>()
+                .As<IMarketInstrumentService>()
                 .SingleInstance();
         }
     }

@@ -1,4 +1,5 @@
 ﻿using Lykke.HttpClientGenerator;
+using Lykke.Service.MarketInstruments.Client.Api;
 
 namespace Lykke.Service.MarketInstruments.Client
 {
@@ -10,6 +11,14 @@ namespace Lykke.Service.MarketInstruments.Client
         /// </summary> 
         public MarketInstrumentsClient(IHttpClientGenerator httpClientGenerator)
         {
+            Assets = httpClientGenerator.Generate<IAssetsApi>();
+            AssetPairs = httpClientGenerator.Generate<IAssetPairsApi>();
         }
+
+        /// <inheritdoc/>
+        public IAssetsApi Assets { get; }
+
+        /// <inheritdoc/>
+        public IAssetPairsApi AssetPairs { get; }
     }
 }
