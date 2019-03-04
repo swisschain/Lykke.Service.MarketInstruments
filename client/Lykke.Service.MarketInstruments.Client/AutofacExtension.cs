@@ -45,6 +45,7 @@ namespace Lykke.Service.MarketInstruments.Client
             
             builder.RegisterType<MarketInstrumentService>()
                 .As<IMarketInstrumentService>()
+                .As<IStartable>()
                 .SingleInstance();
         }
     }
