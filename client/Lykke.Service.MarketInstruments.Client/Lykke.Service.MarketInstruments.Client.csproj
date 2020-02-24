@@ -5,13 +5,14 @@
     <Authors>Lykke</Authors>
     <Company>Lykke</Company>
     <Product>Lykke.Service.MarketInstruments</Product>
-    <Description>Client for Lykke.Service.MarketInstruments API</Description>
-    <PackageLicenseUrl>https://github.com/LykkeCity/Lykke.Service.MarketInstruments/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/LykkeCity/Lykke.Service.MarketInstruments</PackageProjectUrl>
+    <PackageId>Swisschain.Service.MarketInstruments</PackageId>
+    <Description>Client for Swisschain.Service.MarketInstruments API</Description>
+    <PackageLicenseUrl>https://github.com/SC-Poc/Lykke.Service.MarketInstruments/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/SC-Poc/Lykke.Service.MarketInstruments</PackageProjectUrl>
     <PackageIconUrl>https://avatars3.githubusercontent.com/u/14153330?v=3&amp;s=200</PackageIconUrl>
-    <RepositoryUrl>https://github.com/LykkeCity/Lykke.Service.MarketInstruments.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/SC-Poc/Lykke.Service.MarketInstruments.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>Lykke</PackageTags>
+    <PackageTags>Swisschain</PackageTags>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>

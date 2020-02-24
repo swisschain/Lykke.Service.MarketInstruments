@@ -8,10 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution items", "0. Sol
 		.gitignore = .gitignore
 		LICENSE = LICENSE
 		README.md = README.md
-		settings.yaml = settings.yaml
 		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
-		CODEOWNERS = CODEOWNERS
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Domain", "1. Domain", "{CC2067D7-1971-47BB-B491-5649EA3C18B2}"
@@ -41,6 +39,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lykke.Service.MarketInstruments.AzureRepositories.Tests", "tests\Lykke.Service.MarketInstruments.AzureRepositories.Tests\Lykke.Service.MarketInstruments.AzureRepositories.Tests.csproj", "{0D13FA3A-1BE8-4C93-B692-8E29164958D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lykke.Service.MarketInstruments.DomainServices.Tests", "tests\Lykke.Service.MarketInstruments.DomainServices.Tests\Lykke.Service.MarketInstruments.DomainServices.Tests.csproj", "{FD7F5FF0-E525-4180-903D-8C536B8ACF78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{778D16FF-E9A7-4B3D-9F2C-4D6027DDAF3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{05583573-8A0F-4C02-A36F-EFAADC709FA5}"
+ProjectSection(SolutionItems) = preProject
+	.github\workflows\CreateServiceDocker.yml = .github\workflows\CreateServiceDocker.yml
+	.github\workflows\ValidateCommit.yml = .github\workflows\ValidateCommit.yml
+	.github\workflows\DeployNugetClient.yml = .github\workflows\DeployNugetClient.yml
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +104,7 @@ Global
 		{A61FFDEE-5725-4650-A788-6E55EE5EFD5B} = {8F9036B1-5106-4C69-B2D2-B78EE52687A0}
 		{0D13FA3A-1BE8-4C93-B692-8E29164958D9} = {8F9036B1-5106-4C69-B2D2-B78EE52687A0}
 		{FD7F5FF0-E525-4180-903D-8C536B8ACF78} = {8F9036B1-5106-4C69-B2D2-B78EE52687A0}
+		{05583573-8A0F-4C02-A36F-EFAADC709FA5} = {778D16FF-E9A7-4B3D-9F2C-4D6027DDAF3C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB6C0EF4-AA6A-444D-8603-3669F73A58BC}
